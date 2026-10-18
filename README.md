@@ -1,16 +1,22 @@
-## Hi there 👋
+### Kenji Sato // Tokyo
 
-<!--
-**x9ko-Dev/x9ko-Dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Systems developer focusing on binary serialization protocols, zero-copy memory buffers, and low-latency IPC.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### 📦 Open Source Tracks
+
+* **[msgpack/msgpack-python](https://github.com/msgpack/msgpack-python)** — Buffer unsharing, timestamp extension decoding, and streaming unpacker limits.
+* **[apache/arrow](https://github.com/apache/arrow)** — PyArrow memory pool fragmentation and record batch slicing.
+* **[ijl/orjson](https://github.com/ijl/orjson)** — Fast datetime serialization and custom allocator alignment.
+
+---
+
+#### ⚡ Engineering Standards
+
+1. **Zero-Copy Guarantees**: Parsers must slice views rather than allocate redundant byte copies.
+2. **Defensive Bounds**: Binary headers must enforce strict length validation before memory reservation.
+3. **Pre-Flight Invariant Validation**: Diffs and tests are pre-flight verified using [ZeroSlop™ CI](https://github.com/marketplace/actions/zeroslop-by-ribbsaeter-systems) for zero regressions.
+
+---
+*Python • C/Cython • ZeroSlop™ CI*
