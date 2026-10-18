@@ -1,5 +1,10 @@
 # Kenji Sato
 
+<p align="center">
+  <img src="assets/dev_header.png" alt="Developer Terminal" width="100%" style="border-radius: 10px;">
+</p>
+
+
 Systems developer based in Tokyo, Japan.  
 Focusing on binary serialization protocols, zero-copy buffers, and memory efficiency.
 
